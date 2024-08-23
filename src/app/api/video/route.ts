@@ -8,6 +8,8 @@ import { getVideoInfo } from "@/features/instagram";
 import { INSTAGRAM_CONFIGS } from "@/features/instagram/constants";
 import { getPostIdFromUrl } from "@/features/instagram/utils";
 
+export const runtime = 'edge';
+
 function handleError(error: any) {
   if (error instanceof HTTPError) {
     const response = makeErrorResponse(error.message);
